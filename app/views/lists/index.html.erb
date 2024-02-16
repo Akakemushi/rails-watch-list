@@ -1,6 +1,14 @@
 <div class="banner">
 </div>
+<div class="container d-flex flex-wrap">
 <% @lists.each do |list| %>
-  <%= link_to list.name, list_path(list) %>
+  <div class="list-card mt-3 mx-2" style="background-image: url(<%= cl_image_path list.photo.key, alt: "#{list.name}", width: 200, height: 200, crop: :thumb %>)">
+    <h3><%= list.name %></h3>
+    <%= link_to list_path(list) do %>
+    <% end %>
+  </div>
 <% end %>
-<%= link_to "make a new list", new_list_path %>
+</div>
+<div class="button">
+<%= link_to "+ List", new_list_path %>
+</div>

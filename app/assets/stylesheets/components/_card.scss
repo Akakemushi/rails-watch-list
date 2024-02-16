@@ -1,0 +1,29 @@
+.list-card {
+  height: 200px;
+  width: 200px;
+  position: relative;
+
+  a {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    color: aliceblue;
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+    border-radius: 30%;
+    top: 58%;
+    background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.491) 30%,
+      rgba(0, 0, 0, 0.491) 70%,
+      rgba(0, 0, 0, 0) 80%
+    );
+  }
+}
